@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <div class ="container">
+        <div class="well text-center">Product Details</div>
+
+        <form method="POST" action="/getData" enctype="multipart/form-data">
+        
+         Enter Product name:
+         <input type="text"  name="pname" class="formControl">
+         <br><br>
+         Enter quantity:<input type="number" name="pqty" class="formControl">
+         <br><br>
+         Enter Price:<input type="number" name="price" class="formControl">
+          <br><br>
+         Enter  productimage :<input type="file" name="image" class="formControl">
+         <br><br>
+         <input type="submit" value="submit" class="btn btn-primary">
+        </form>
+        </div>
+    
+</body>
+</html>
